@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="easygas.app.com.easygas.Fragment.fragment_map">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/fragment_map_tvmap"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:text="@string/map"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/background_map_tv"/>
+        <TextView
+            android:id="@+id/fragment_map_tvlist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:text="@string/list"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/background_map_tv"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/fragment_map_tvselectgas"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_marginLeft="@dimen/_9sdp"
+            android:text="@string/selectgas"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:background="@drawable/background_map_tv"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_selectgas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_25sdp">
+        <include android:id="@+id/la" layout="@layout/fragment_add_order"></include>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>
